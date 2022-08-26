@@ -7,8 +7,9 @@
 }
 
 body {
+    /* alternative color: #3a3c42; */
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    background: #3a3c42;
+    background: #fff;
 }
 
 /* Navbar */
@@ -19,6 +20,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.4)
 }
 
 .nav-logo {
@@ -38,25 +40,72 @@ body {
     list-style: none;
     cursor: pointer;
     font-size: 1rem;
-    color: white;
+    color: black;
 }
 
 .login-btn {
     margin-right: 1rem;
     border: none;
     background-color: inherit;
-    color: white;
+    color: black;
     cursor: pointer;
     font-size: 1rem;
 }
 
 .signup-btn {
-    border: 1.75px solid #0d131f;
-    border-radius: 0.5rem;
+    border: 1px solid black;
+    border-radius: 7px;
     background-color: inherit;
-    color: white;
+    color: black;
     width: 100px;
     height: 40px;
     font-size: 1rem;
     cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.product {
+    width: 50%;
+}
+
+.product-title {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.product-description {
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.product-price {
+    margin: 10px;
+}
+
+.product-btn {
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: #fff;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.product-img {
+    width: 100%;
+    margin-top: 6px;
+    object-fit: cover;
 }
