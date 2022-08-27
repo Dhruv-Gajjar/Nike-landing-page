@@ -24,8 +24,8 @@ body {
 }
 
 .nav-logo {
-    width: 120px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
 }
 
@@ -36,20 +36,47 @@ body {
 }
 
 .link {
+    display: inline-block;
+    position: relative;
+    color: black;
     padding: 1rem;
     list-style: none;
     cursor: pointer;
     font-size: 1rem;
-    color: black;
+}
+
+.link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom;
+    transition: transform 0.25s ease-out;
+}
+
+.link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom;
 }
 
 .login-btn {
+    width: 100px;
+    height: 40px;
     margin-right: 1rem;
     border: none;
     background-color: inherit;
     color: black;
     cursor: pointer;
     font-size: 1rem;
+}
+
+.login-btn:hover {
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 7px;
 }
 
 .signup-btn {
@@ -61,6 +88,10 @@ body {
     height: 40px;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: rgb(0, 0, 0, 0.2);
 }
 
 /* Hero Section */
@@ -102,10 +133,16 @@ body {
     color: black;
     font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.product-btn:hover {
+    background-color: rgb(0, 0, 0, 0.2);
 }
 
 .product-img {
     width: 100%;
+    height: 80vh;
     margin-top: 6px;
     object-fit: cover;
 }
