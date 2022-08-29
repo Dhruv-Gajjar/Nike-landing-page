@@ -9,6 +9,7 @@
 body {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     background: #fff;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -422,9 +423,7 @@ footer {
 
 /* Media Query for mobile devices*/
 @media only screen and (max-device-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
+
 
     .toggle-btn {
         display: block;
